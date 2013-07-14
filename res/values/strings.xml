@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">술자리 진실게임</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">술자리 진실게임</string>
+    <string name="strmemoyes">Yes</string>
+    <string name="strmemono">no</string>
+
+</resources>

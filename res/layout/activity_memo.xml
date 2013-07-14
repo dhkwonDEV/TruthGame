@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="279dp"
+        android:layout_height="270dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/memo_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="110" />
+
+            <TextView
+                android:id="@+id/questionview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="309"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="226" />
+
+            <ImageView
+                android:id="@+id/Glass1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="29" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" />
+
+            <ImageView
+                android:id="@+id/Glass2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="29" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" />
+
+            <ImageView
+                android:id="@+id/Glass3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="29" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/memo_yes_btn"
+                android:onClick="mOnClick" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/memo_no_btn"
+                android:onClick="mOnClick" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+

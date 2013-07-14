@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/description_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="43"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="134" />
+
+            <Button
+                android:id="@+id/btndescriptionback"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:background="@drawable/description_back"
+                android:onClick="mOnClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="72px"
+            android:layout_alignParentTop="true" >
+
+            <net.daum.adam.publisher.AdView
+                android:id="@+id/adview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                clientId="35e1Z3qT138fb64f005" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>
