@@ -20,7 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
-//���ø����̼� �������� �Ǵ� Activity
+//占쏙옙占시몌옙占쏙옙占싱쇽옙 占쏙옙占쏙옙占쏙옙占쏙옙 占실댐옙 Activity
 public class MainActivity extends Activity {
 
 	private AdView adView;
@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		// ���� ����
+		// 占쏙옙占쏙옙 占쏙옙占쏙옙
 		adView = (AdView) findViewById(R.id.adview);
 		adView.setRequestInterval(12);
 		adView.setAnimationType(AnimationType.FLIP_HORIZONTAL);
@@ -96,12 +96,12 @@ public class MainActivity extends Activity {
 	}
 
 	public void mOnClick(View v) {
-		if (v.getId() == R.id.btngamestart) { // ���� ���� ��ư�� ���� ���
+		if (v.getId() == R.id.btngamestart) { // 占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙튼占쏙옙 占쏙옙占쏙옙 占쏙옙占�			
 			Intent intent = new Intent(this, TableActivity.class);
 			startActivityForResult(intent, this.TABLE_ACTIVITY);
 			this.finish();
 		}
-		if (v.getId() == R.id.btngamedescription) { // ���� ������ ������ ���
+		if (v.getId() == R.id.btngamedescription) { // 占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙 占쏙옙占�			
 			Intent intent = new Intent(this, DescriptionActivity.class);
 			startActivity(intent);
 		}
@@ -111,10 +111,9 @@ public class MainActivity extends Activity {
 		super.onActivityResult(requestCode, resultCode, data);
 
 		if ((requestCode == this.TABLE_ACTIVITY)
-				&& (resultCode == RESULT_CANCELED)) { // ����ڰ� �� �������
-														// ���Ͽ��� ���
-			this.finish(); // QuestionNum�� �������μ� ������ ���� �ٽ� ���ü� �ְ�
-							// �Ѵ�.
+				&& (resultCode == RESULT_CANCELED)) { // 占쏙옙占쏙옙微占�占쏙옙 占쏙옙占쏙옙占쏙옙占�														// 占쏙옙占싹울옙占쏙옙 占쏙옙占�			
+			this.finish(); // QuestionNum占쏙옙 占쏙옙占쏙옙占쏙옙占싸쇽옙 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙 占쌕쏙옙 占쏙옙占시쇽옙 占쌍곤옙
+							// 占싼댐옙.
 		}
 	}
 
